@@ -1,0 +1,9 @@
+#!/bin/sh
+
+killall xconsole
+killall xmatrix
+killall xclock
+killall xli
+killall xlogo
+
+exit 0

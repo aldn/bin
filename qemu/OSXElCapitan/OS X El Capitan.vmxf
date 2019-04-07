@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Foundry>
+<VM>
+<VMId type="string">52 d8 12 05 d8 0e 10 f8-02 ea d7 c8 91 a7 e1 4c</VMId>
+<ClientMetaData>
+<clientMetaDataAttributes/>
+<HistoryEventList/></ClientMetaData>
+<vmxPathName type="string">OS X El Capitan.vmx</vmxPathName></VM><tools-install-info><installError>21004</installError><updateCounter>22</updateCounter></tools-install-info></Foundry>

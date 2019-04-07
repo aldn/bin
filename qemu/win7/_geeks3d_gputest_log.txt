@@ -1,0 +1,32 @@
+2017:03:28@23:42:50(0000000001) < > GpuTest (Linux x64) is starting up...
+2017:03:28@23:42:50(0000000002) < > GpuTest: Cross Platform Graphics Benchmark Utility
+2017:03:28@23:42:50(0000000003) < > (C)2012-2014 Geeks3D (www.geeks3d.com)
+2017:03:28@23:42:50(0000000004) < > Linux information:
+2017:03:28@23:42:50(0000000005) < > - sysname: Linux
+2017:03:28@23:42:50(0000000006) < > - release: 4.10.4-1-ARCH
+2017:03:28@23:42:50(0000000007) < > - version: #1 SMP PREEMPT Sat Mar 18 19:39:18 CET 2017
+2017:03:28@23:42:50(0000000008) < > - machine: x86_64
+2017:03:28@23:42:50(0000000009) < > gxl3d codename: Zhald.
+2017:03:28@23:42:50(0000000010) < > gxl3d_plugin_opencl: OpenCL computing plugin (OpenCL 1.1, 1.2).. By JeGX / Geeks3D.com
+2017:03:28@23:42:50(0000000011) < > gxl3d OpenCL plugin - initializing OpenCL data...
+2017:03:28@23:42:50(0000000012) < > gxl3d_plugin_gpu_monitor_gml: GPU monitor plugin for gxl3d.. By JeGX / Geeks3D.com
+2017:03:28@23:42:50(0000000013) < > [GpuMonitor plugin] Linux - CPU name: Intel(R) Core(TM) i5-4210H CPU @ 2.90GHz, CPU speed: 3350MHz, RAM: 7908MB
+2017:03:28@23:42:51(0000000014) < > [GpuMonitor plugin] Num GPUs found: 1
+2017:03:28@23:42:51(0000000015) < > [GpuMonitor plugin] GPU0 - Intel HD Graphics 4600 (D)
+2017:03:28@23:42:51(0000000016) < > [GpuMonitor plugin] GPU0 - PCI codes: 0x8086-0x0416
+2017:03:28@23:42:51(0000000017) < > GPU monitoring thread started.
+2017:03:28@23:42:51(0000000018) < > Display size: width=1920, height=1080
+2017:03:28@23:42:51(0000000019) < > Window size: width=1024, height=640, left=0, top=0
+2017:03:28@23:42:51(0000000020) < > FurMark - OpenGL renderer init OK.
+2017:03:28@23:42:51(0000000021) < > FurMark - VSYNC disabled (xxx_SwapInterval_xxx available).
+2017:03:28@23:42:51(0000000022) < > FurMark - OpenGL version detected: 3.0
+2017:03:28@23:42:51(0000000023) < > FurMark - # OpenGL extensions: 261
+2017:03:28@23:42:51(0000000024) < > FurMark - OpenGL - Renderer model: Mesa DRI Intel(R) Haswell Mobile 
+2017:03:28@23:42:51(0000000025) < > FurMark - OpenGL - Renderer vendor: Intel Open Source Technology Center
+2017:03:28@23:42:51(0000000026) < > FurMark - OpenGL - API version: 3.0 Mesa 17.0.1
+2017:03:28@23:42:51(0000000027) < > FurMark - OpenGL - Shading language version: 1.30
+2017:03:28@23:42:52(0000000028) <*> - Unable to load the bkg image!
+2017:03:28@23:42:52(0000000029) < > - Render thread - FurMark init failed.
+2017:03:28@23:42:52(0000000030) < > Stopping gxl3d engine...
+2017:03:28@23:42:52(0000000031) < > Exit from GpuTest.
+

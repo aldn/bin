@@ -1,0 +1,6 @@
+[submodule "scrapers/pinterest"]
+	path = scrapers/pinterest
+	url = https://github.com/aldn/PinterestTakeout
+[submodule "scrapers/wallhaven"]
+	path = scrapers/wallhaven
+	url = https://github.com/aldn/wallpaper-wallhaven-dl

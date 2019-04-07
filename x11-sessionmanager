@@ -1,0 +1,83 @@
+#!/bin/sh
+
+
+# kill everything that may be lying around
+killall xbindkeys
+killall compton
+killall mpd
+killall conky   
+killall tint2
+killall pasystray
+killall cbatticon
+killall kbdd
+killall dunst
+killall albert
+killall transmission-qt
+killall owncloud
+
+# this is required for toolkits e.g. selecting a current icon theme 
+export DESKTOP_SESSION=GNOME
+export XDG_CURRENT_DESKTOP=GNOME
+
+#wallpaper-wallhaven-dl.sh -m favorites -n  2 -m favorites &
+dbus-update-activation-environment --systemd DISPLAY
+
+xrandr --dpi 96
+# -option "" clears existing option list
+setxkbmap -layout "us,ru" -option "" -option "compose:ralt" -option "grp:rshift_toggle"
+xmodmap .config/xmodmap/capslock
+xset dpms 600
+xrdb -m ~/.Xresources
+xhost +
+#autocutsel -fork
+#autocutsel -selection PRIMARY -fork
+xbindkeys
+#kbdd
+
+# Ctrl-D
+#albert &
+
+# notification daemon
+dunst &
+
+# start xiccd and kill it after 4 seconds
+timeout 4s xiccd &
+
+# Make Caps Lock act as Mod4
+#xmodmap -e "remove lock = Caps_Lock"
+#xmodmap -e "add mod4 = Caps_Lock"
+
+#compton &
+#lxqt-notificationd &
+nitrogen --restore
+#sleep 0.3
+#conky -c ~/.config/conky/sidebar.lua -x 4 -y 4 &
+tint2 &
+#sleep 1
+
+#nm-applet &
+#blueberry-tray &
+#pasystray &
+#cbatticon &
+#chromium &
+#thunar --daemon &
+#virt-manager &
+#uzbl-tabbed &
+#gvim &
+#steam &
+
+#transmission-qt &
+#owncloud &
+#mpd .config/mpd/mpd.conf
+
+#-------
+#  WM
+#-------
+#herbstluftwm &
+#i3 &
+openbox &
+#compiz &
+
+
+# loop forever
+while [ 1 ]; do sleep 10; done

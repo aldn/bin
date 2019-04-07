@@ -1,0 +1,2 @@
+Module,Renderer,ApiVersion,Width,Height,Fullscreen,AntiAliasing,AvgFPS,Duration,MaxGpuTemp,Score
+Plot3D,Mesa DRI Intel(R) Haswell Mobile ,3.0 Mesa 17.0.1,1024,640,NO,Off,89,60000,0,5341

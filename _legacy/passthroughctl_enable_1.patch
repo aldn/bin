@@ -1,0 +1,29 @@
+--- /boot/grub/grub.cfg.orig	2016-04-06 00:46:08.954520706 +0300
++++ /boot/grub/grub.cfg	2016-04-06 00:03:15.275890414 +0300
+@@ -105,7 +105,7 @@
+ 	  search --no-floppy --fs-uuid --set=root d70acd7e-f7f0-4d04-9d0c-bd003feb5cb9
+ 	fi
+ 	echo	'Загружается Linux linux …'
+-	linux	/boot/vmlinuz-linux root=UUID=d70acd7e-f7f0-4d04-9d0c-bd003feb5cb9 rw  splash resume=/dev/sda
++	linux	/boot/vmlinuz-linux root=UUID=d70acd7e-f7f0-4d04-9d0c-bd003feb5cb9 rw  splash resume=/dev/sda2 intel_iommu=on hugepages=2048
+ 	echo	'Загружается начальный виртуальный диск …'
+ 	initrd	 /boot/initramfs-linux.img
+ }
+@@ -124,7 +124,7 @@
+ 		  search --no-floppy --fs-uuid --set=root d70acd7e-f7f0-4d04-9d0c-bd003feb5cb9
+ 		fi
+ 		echo	'Загружается Linux linux …'
+-		linux	/boot/vmlinuz-linux root=UUID=d70acd7e-f7f0-4d04-9d0c-bd003feb5cb9 rw  splash resume=/dev/sda
++		linux	/boot/vmlinuz-linux root=UUID=d70acd7e-f7f0-4d04-9d0c-bd003feb5cb9 rw  splash resume=/dev/sda2 intel_iommu=on hugepages=2048
+ 		echo	'Загружается начальный виртуальный диск …'
+ 		initrd	 /boot/initramfs-linux.img
+ 	}
+@@ -142,7 +142,7 @@
+ 		  search --no-floppy --fs-uuid --set=root d70acd7e-f7f0-4d04-9d0c-bd003feb5cb9
+ 		fi
+ 		echo	'Загружается Linux linux …'
+-		linux	/boot/vmlinuz-linux root=UUID=d70acd7e-f7f0-4d04-9d0c-bd003feb5cb9 rw  splash resume=/dev/sda
++		linux	/boot/vmlinuz-linux root=UUID=d70acd7e-f7f0-4d04-9d0c-bd003feb5cb9 rw  splash resume=/dev/sda2 intel_iommu=on hugepages=2048
+ 		echo	'Загружается начальный виртуальный диск …'
+ 		initrd	 /boot/initramfs-linux-fallback.img
+ 	}

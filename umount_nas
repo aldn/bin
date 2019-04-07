@@ -1,0 +1,15 @@
+#!/bin/bash
+
+dir_prefix=/run/user/$UID/mount
+
+umount_d()
+{
+    sudo umount $dir_prefix/$1
+}
+
+
+# umount_d NASPublic
+# umount_d NASDepot
+# umount_d NASMedia
+# umount_d NASTorrent
+umount_d NAS

@@ -1,0 +1,2 @@
+#!/bin/sh
+ps aux --sort rss | awk '{sum += \$6} END {print sum}'

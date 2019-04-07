@@ -1,0 +1,20 @@
+# =============================================================
+# reencodes all .mp3 files in this dir and subdirs
+# to Ogg Vorbis
+
+for i in `find -name *.mp3`;do lame --decode "$i" - | oggenc - -o ${i%%.mp3}.ogg ;done
+
+# =============================================================
+# for each dirs in given directory,
+# lists all .ogg files with:
+#  a) stripped "XX." at the beginning (XX are digits)
+#  b) directory name prepended
+
+for i in *;do (cd $i; find -name \*.ogg | I=$i perl -e 'for (<STDIN>) { s#^./\d+.##g; $_ = $ENV{I}. "_-". $_; print; }'; ) done
+
+# the same command but will actually rename the files
+# USE WITH CAUTION!
+
+for i in *;do (cd $i; find -name \*.ogg | I=$i perl -e 'for (<STDIN>) { chomp;  $prev=$_; s#^./\d+.##g; $_ = $ENV{I}. "_-". $_; system("mv $prev $_") ; }'; ) done
+
+# =============================================================

@@ -1,0 +1,7 @@
+#!/bin/sh
+FILE=$1
+APP=$2
+#get mime type of file
+MIMETYPE=`xdg-mime query filetype $FILE`
+#associate that mime type with app
+xdg-mime default $APP $MIMETYPE

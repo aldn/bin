@@ -1,0 +1,14 @@
+#!/bin/sh
+#xsetbg -zoom 63 /usr/kde3/share/wallpapers/kde_passion.jpg
+if [ -f /etc/sysconfig/xdmsound ]; then
+    # play a sound at display manager start
+    . /etc/sysconfig/xdmsound
+    
+    if [ `echo $XDMSOUND | grep .wav` ]; then
+    	play $XDMSOUND &
+    elif [ `echo $XDMSOUND | grep .mp3` ]; then
+    	mpg123 $XDMSOUND & 
+    elif [ `echo $XDMSOUND | grep .ogg` ]; then
+    	ogg123 $XDMSOUND &  
+    fi
+fi

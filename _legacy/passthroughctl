@@ -1,0 +1,29 @@
+#!/bin/sh
+
+cmd=$1
+dir="/home/aldn/pr/sh"
+patchfile="$dir/passthroughctl_enable_1.patch"
+
+p_on()
+{
+   echo "Enabling passthrough"
+   pushd / > /dev/null
+   sudo patch -p0 < $patchfile
+   popd > /dev/null
+}
+
+p_off()
+{
+   echo "Disabling passthrough"
+   pushd / > /dev/null
+   sudo patch -p0 -R < $patchfile
+   popd > /dev/null
+}
+
+if [ "$cmd" = "off" ]; then
+   p_off
+elif [ "$cmd" = "on" ]; then
+   p_on
+else
+   echo "Invalid argument."
+fi

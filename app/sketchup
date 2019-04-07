@@ -1,0 +1,2 @@
+#!/bin/sh
+WINEPREFIX="/home/aldn/.wine" wine C:\\Program\ Files\ \(x86\)\\SketchUp\\SketchUp\ 2016\\SketchUp.exe $@

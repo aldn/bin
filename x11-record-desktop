@@ -1,0 +1,33 @@
+#!/bin/sh
+
+SIZE=1920x1080
+FRAMERATE=60
+
+AQUALITY="-b:a 128k"
+
+OUTPUT_NAME=`date +%F_%H_%M_%S`.mkv
+#LIBVA_DRIVER_NAME=vdpau
+
+
+#intel HW encoding
+#VQUALITY="-b:v 5M"
+#VQUALITY="-qp 30"
+# ffmpeg -y \
+#         -vsync passthrough -vaapi_device /dev/dri/renderD128 -hwaccel vaapi -hwaccel_output_format vaapi  \
+#         -thread_queue_size 512 -f x11grab -framerate $FRAMERATE -video_size $SIZE  -i $DISPLAY \
+#         -thread_queue_size 512 -f pulse -i "alsa_output.pci-0000_00_1b.0.analog-stereo.monitor" \
+#         -vf 'hwupload'  -c:v h264_vaapi $VQUALITY \
+#         -c:a libfdk_aac $AQUALITY \
+#         $OUTPUT_NAME
+
+
+#NVIDIA HW encoding
+#-cq <0..51>
+VQUALITY="-preset slow -profile:v high  -rc vbr -cq 28 -qmin 1 -qmax 28"
+ffmpeg -y \
+        -vsync passthrough \
+        -thread_queue_size 512 -f x11grab -framerate $FRAMERATE -video_size $SIZE  -i $DISPLAY \
+        -thread_queue_size 512 -f pulse -i "alsa_output.pci-0000_00_1b.0.analog-stereo.monitor" \
+        -c:v h264_nvenc $VQUALITY \
+        -c:a libopus $AQUALITY \
+        $OUTPUT_NAME

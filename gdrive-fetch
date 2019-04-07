@@ -1,0 +1,4 @@
+#!/bin/bash
+
+. gd_dirname.inc
+exec rclone sync gdrive:/$1  ~/googledrive/`gd_dirname $1`

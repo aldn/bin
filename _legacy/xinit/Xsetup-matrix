@@ -1,0 +1,18 @@
+#!/bin/sh
+
+CON="/dev/console"
+
+COLOR_MDK="#666699"
+MGREEN1="#006600"
+MGREEN2="#339033"
+
+#xsetbg -zoom 63 /usr/kde3/share/wallpapers/kde_passion.jpg
+/usr/X11R6/bin/xsetroot -solid $COLOR_MDK -cursor_name left_ptr
+/usr/X11R6/bin/xli -zoom 40  /home/crow/images/album/matrix/EF-4.jpg &
+/usr/X11R6/bin/xconsole -geometry 480x100-0-0 -fg $MGREEN2 -bg black -daemon -notify -verbose -fn fixed -exitOnFail
+/usr/X11R6/bin/xclock -update 1 -geometry 100x100+0-0 -hd $MGREEN1 -hl $MGREEN2 -fg $MGREEN1 -bg black &
+/usr/X11R6/bin/xlogo -shape -fg $MGREEN2 -geometry 50x50-0+0 &
+/usr/X11R6/lib/xscreensaver/xmatrix -root -small -density 50 -delay 40000  &
+
+echo  > $CON
+echo  "E N T E R I N G   T H E  M A T R I X. . . . ."  > $CON

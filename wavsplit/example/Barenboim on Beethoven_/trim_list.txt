@@ -1,0 +1,32 @@
+Sonata No. 01 F minor Op. 2 No. 1.wav;0:05;3:55;9:32;13:21;18:24
+Sonata No. 02 A major Op. 2 No. 2.wav;0:03;7:25;14:52;18:15;24:53
+Sonata No. 03 C major Op. 2 No. 3.wav;0:04;10:49;18:37;21:37;26:47
+Sonata No. 04 E flat major Op. 7.wav;0:05;8:29;18:11;23:17;30:54
+Sonata No. 05 C minor Op. 10 No. 1.wav;0:03;5:52;14:22;18:52
+Sonata No. 06 F major Op. 10 No. 2.wav;0:02;6:14;10:34;12:47
+Sonata No. 07 D major Op. 10 No. 3.wav;0:05;7:22;18:10;21:05;25:06
+Sonata No. 08 C minor Op. 13 Pathetique.wav;0:02;9:30;14:56;19:42
+Sonata No. 09 E major Op. 14 No. 1.wav;0:02;7:05;11:39;15:08
+Sonata No. 10 G major Op. 14 No. 2.wav;0:02;7:10;12:36;15:58
+Sonata No. 11 B flat major Op. 22.wav;0:04;7:33;17:00;20:32;27:02
+Sonata No. 12 A flat major Op. 26.wav;0:07;8:58;11:40;18:13;21:10
+Sonata No. 13 E flat major Op. 27 No. 1.wav;0:04;5:29;7:51;11:01;16:39
+Sonata No. 14 C sharp minor Op. 27 No. 2 Moonlight.wav;0:18;6:45;9:07;16:28
+Sonata No. 15 D major Op. 28 Pastoral.wav;0:02;11:50;19:56;22:37;28:07
+Sonata No. 16 G major Op. 31 No. 1.wav;0:04;6:43;18:35;24:52
+Sonata No. 17 D minor Op. 31 No. 2 Tempest.wav;0:02;8:46;17:52;25:12
+Sonata No. 18 E flat major Op. 31 No. 3 Hunt.wav;0:05;8:31;13:22;17:44;22:13
+Sonata No. 19 G minor Op. 49 No. 1.wav;0:03;4:37;7:48
+Sonata No. 20 G major Op. 49 No. 2.wav;0:02;4:30;8:06
+Sonata No. 21 C major Op. 53 Waldstein.wav;0:05;11:22;15:40;26:45
+Sonata No. 22 F major Op. 54.wav;0:02;5:51;12:15
+Sonata No. 23 F minor Op. 57 Appassionata.wav;0:03;10:33;17:59;23:19
+Sonata No. 24 F sharp major Op. 78.wav;0:03;7:07;10:10
+Sonata No. 25 G major Op. 79.wav;0:05;4:47;7:32;9:39
+Sonata No. 26 E flat major Op. 81a Les Adieux.wav;0:06;7:35;11:35;17:45
+Sonata No. 27 E minor Op. 90.wav;0:02;5:45;13:40
+Sonata No. 28 A major Op. 101.wav;0:02;3:57;10:13;12:40;20:47
+Sonata No. 29 B flat major Op. 106 Hammerklavier.wav;0:03;12:50;15:52;36:52;49:28
+Sonata No. 30 E major Op. 109.wav;0:05;4:21;7:08;21:15
+Sonata No. 31 A flat major Op. 110.wav;0:04;7:20;9:40;21:34
+Sonata No. 32 C minor Op. 111.wav;0:08;9:52;29:58

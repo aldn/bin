@@ -1,0 +1,18 @@
+#!/bin/bash
+
+dir_prefix=/run/user/$UID/mount
+server=192.168.0.10
+
+[[ -d $dir_prefix ]] || mkdir $dir_prefix
+
+mount_d()
+{
+    [[ -d $dir_prefix/$1 ]] || mkdir $dir_prefix/$1
+    sudo mount.cifs //$server/$1 $dir_prefix/$1 -o credentials=$HOME/.config/credentials_alice_nas,workgroup=WONDERLAND,iocharset=utf8,uid=dn,gid=dn
+}
+
+# mount_d NASPublic
+# mount_d NASDepot
+# mount_d NASMedia
+# mount_d NASTorrent
+mount_d NAS

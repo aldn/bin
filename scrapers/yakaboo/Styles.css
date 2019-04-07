@@ -1,0 +1,85 @@
+
+body
+{
+   background-color: #f0f0f0;
+}
+
+.cell
+{
+	position:         relative;
+   float:            left;
+   width:            240px;
+   height:           150px;
+   border:           1px solid #aaa;
+   margin-left:      0px;
+   margin-top:       0px;
+   margin-right:    -1px;
+   margin-bottom:   -1px;
+   padding:          5px;
+   background-color: #fff;
+}
+
+
+.poster
+{
+   text-align:    left;
+   font-size:     80%;
+   font-family:   tahoma, arial,sans-serif;
+   
+   padding:       5px;
+   border:        0px solid #cccccc;
+   margin:        0px;
+   
+   position:      relative;
+   float:         left;
+}
+
+.textbelowposter
+{
+   padding-top:   5px;   
+}
+
+.celltext
+{
+   text-align:    center;
+   font-size:     80%;
+   font-family:   tahoma, arial,sans-serif;
+   
+   word-wrap:     break-word;
+   overflow:      hidden;
+   padding:       5px;
+   border:        0px solid #cccccc;
+   margin:        0px;
+   position:      relative;
+   float:         none;
+}
+
+.title_en
+{
+   font-size: 70%;
+}
+
+.rating_low 
+{
+   color: red;
+}
+
+.rating_medium
+{
+   background-color: yellow;
+}
+
+.rating_high
+{
+   color: green;
+}
+
+.available
+{
+   color: black;
+}
+.unavailable
+{
+   color: white;
+   background-color: red;
+}

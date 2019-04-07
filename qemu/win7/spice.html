@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Download</title>
+        <link rel="icon" type="image/png" href="images/favicon.png"/>
+        <link href="https://www.spice-space.org/theme/css/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://www.spice-space.org/theme/css/main.css" />
+        <link rel="stylesheet" type="text/css" href="https://www.spice-space.org/theme/tipuesearch/tipuesearch.css" media="screen">
+        <script src="https://code.jquery.com/jquery.min.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+    <div class="container">
+        <header id="banner" class="body">
+                <div id="search-area">
+                    <form action="https://www.spice-space.org/search.html"
+                          onsubmit="return validateForm(this.elements['q'].value);">
+                    <input type="text"
+                           class="search-query"
+                           placeholder="Search"
+                           name="q"
+                           id="tipue_search_input">
+                    </form>
+                </div>
+                <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                  </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="https://www.spice-space.org/index.html">HOME</a></li>
+                    <li><a href="https://www.spice-space.org/faq.html">FAQ</a></li>
+                    <li><a href="https://www.spice-space.org/features.html">Features</a></li>
+                    <li><a href="https://www.spice-space.org/documentation.html">Documentation</a></li>
+                    <li><a href="https://www.spice-space.org/support.html">Support</a></li>
+                    <li><a href="https://www.spice-space.org/download.html">Download</a></li>
+                    <li><a href="https://www.spice-space.org/developers.html">Developers</a></li>
+                    <li><a href="https://www.spice-space.org/contact.html">Contact</a></li>
+                </ul>
+                </div>
+                </div>
+                </nav>
+                <div class="gradient"/>
+        </header><!-- /#banner -->
+<div>
+    <h1 class="entry-title">Download</h1>
+    
+    <div class="section" id="client">
+<h2>Client</h2>
+<p>To connect to a virtual machine using SPICE, you need a client application.</p>
+<div class="section" id="gtk-widget">
+<h3>GTK+ widget</h3>
+<p>spice-gtk is a GTK+3 SPICE widget. It features glib-based objects for SPICE protocol parsing and a gtk widget for embedding the SPICE display into other applications such as <a class="reference external" href="http://virt-manager.org/">virt-manager</a> or <a class="reference external" href="https://wiki.gnome.org/Apps/Boxes">Boxes</a>. Python and Vala bindings are available too.</p>
+<ul class="simple">
+<li>SPICE GTK+ Widget - <a class="reference external" href="https://www.spice-space.org/download/gtk/spice-gtk-0.33.tar.bz2">spice-gtk-0.33.tar.bz2</a><ul>
+<li><a class="reference external" href="http://cgit.freedesktop.org/spice/spice-gtk">http://cgit.freedesktop.org/spice/spice-gtk</a></li>
+</ul>
+</li>
+</ul>
+<p>The recommended client application is <a class="reference external" href="http://virt-manager.org/download">virt-viewer</a>.</p>
+</div>
+<div class="section" id="windows-installers">
+<h3>Windows installers</h3>
+<ul class="simple">
+<li>virt-viewer Windows installer - can be downloaded from <a class="reference external" href="http://virt-manager.org/download">virt-manager download page</a></li>
+<li>UsbDk - A Windows filter driver developed for Spice USB redirection (windows client side) - <a class="reference external" href="https://www.spice-space.org/download/windows/usbdk/UsbDk_1.0.15_x64.msi">UsbDk_1.0.15_x64.msi</a>, <a class="reference external" href="https://www.spice-space.org/download/windows/usbdk/UsbDk_1.0.15_x86.msi">UsbDk_1.0.15_x86.msi</a>, (<a class="reference external" href="https://www.spice-space.org/download/windows/usbdk/spice-usbdk-win-1.0-12-sources.zip">source code</a>)<ul>
+<li><a class="reference external" href="http://cgit.freedesktop.org/spice/win32/usbdk">http://cgit.freedesktop.org/spice/win32/usbdk</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="other-clients">
+<h3>Other clients</h3>
+<ul class="simple">
+<li>Android client - <a class="reference external" href="https://play.google.com/store/apps/details?id=com.iiordanov.freeaSPICE">aSPICE</a> is a secure, SSH capable, open source SPICE protocol client that makes use of the LGPL licensed native libspice library. You can find and install <a class="reference external" href="https://play.google.com/store/apps/details?id=com.iiordanov.freeaSPICE">aSPICE from play.google.com</a>.</li>
+<li><a class="reference external" href="spice-html5.html">Web client</a> - a simple javascript client<ul>
+<li><a class="reference external" href="http://cgit.freedesktop.org/spice/spice-html5">http://cgit.freedesktop.org/spice/spice-html5</a></li>
+</ul>
+</li>
+<li>Experimental <a class="reference external" href="osx-client.html">OS X client</a></li>
+<li>Experimental N900 SPICE client - <a class="reference external" href="https://www.spice-space.org/download/arm/spicec_n900-0.tar.gz">spicec_n900-0.tar.gz</a></li>
+<li><a class="reference external" href="https://github.com/flexvdi/launcher-mobile">launcher-mobile</a> - A GPLv2 licensed cross-platform mobile client for both iOS and Android. Though mainly intended to be used as a client for <a class="reference external" href="https://flexvdi.com">flexVDI</a>, it can also connect to conventional SPICE sessions.<ul>
+<li>It is also avaiable in binary form: <a class="reference external" href="https://itunes.apple.com/us/app/flexvdi-client/id1051361263?mt=8">flexVDI Client at App Store</a>, <a class="reference external" href="https://play.google.com/store/apps/details?id=com.flexvdi.androidlauncher">flexVDI Client at Play Store</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="guest">
+<h2>Guest</h2>
+<p>This section contains various optional drivers and daemons that can be installed on the guest to provide enhanced SPICE integration and performance.</p>
+<div class="section" id="linux-sources">
+<h3>Linux sources</h3>
+<ul class="simple">
+<li>SPICE vdagent - <a class="reference external" href="https://www.spice-space.org/download/releases/spice-vdagent-0.17.0.tar.bz2">spice-vdagent-0.17.0.tar.bz2</a><ul>
+<li><a class="reference external" href="http://cgit.freedesktop.org/spice/linux/vd_agent">http://cgit.freedesktop.org/spice/linux/vd_agent</a></li>
+</ul>
+</li>
+<li>x.org QXL video driver - <a class="reference external" href="http://xorg.freedesktop.org/releases/individual/driver/xf86-video-qxl-0.1.4.tar.bz2">xf86-video-qxl-0.1.4.tar.bz2</a>; Also contains Xspice<ul>
+<li><a class="reference external" href="http://cgit.freedesktop.org/xorg/driver/xf86-video-qxl">http://cgit.freedesktop.org/xorg/driver/xf86-video-qxl</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="windows-binaries">
+<h3>Windows binaries</h3>
+<ul class="simple">
+<li>Windows guest tools - <a class="reference external" href="https://www.spice-space.org/download/windows/spice-guest-tools/spice-guest-tools-0.100.exe">spice-guest-tools-0.100.exe</a><ul>
+<li><a class="reference external" href="http://cgit.freedesktop.org/spice/spice-nsis/">http://cgit.freedesktop.org/spice/spice-nsis/</a></li>
+</ul>
+</li>
+</ul>
+<p>This installer contains some optional drivers and services that can be installed in Windows guest to improve SPICE performance and integration. This includes the qxl video driver and the SPICE guest agent (for copy and paste, automatic resolution switching, ...)</p>
+<ul class="simple">
+<li><a class="reference external" href="https://www.spice-space.org/download/windows/qxl-wddm-dod/qxl-wddm-dod-0.13/">Windows QXL-WDDM-DOD driver</a><ul>
+<li><a class="reference external" href="https://gitlab.com/spice/qxl-wddm-dod.git">https://gitlab.com/spice/qxl-wddm-dod.git</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="https://www.spice-space.org/download/windows/qxl/qxl-0.1-21/">Windows QXL driver</a><ul>
+<li><a class="reference external" href="http://cgit.freedesktop.org/spice/win32/qxl">http://cgit.freedesktop.org/spice/win32/qxl</a></li>
+</ul>
+</li>
+</ul>
+<p><a class="reference external" href="https://www.spice-space.org/download/windows/qxl/qxl-0.1-21/">Windows QXL driver</a> is not needed if you are using the Windows guest tools installer above.</p>
+<ul class="simple">
+<li><a class="reference external" href="https://www.spice-space.org/download/windows/vdagent/vdagent-win-0.8.0">Windows SPICE agent</a><ul>
+<li><a class="reference external" href="http://cgit.freedesktop.org/spice/win32/vd_agent">http://cgit.freedesktop.org/spice/win32/vd_agent</a></li>
+</ul>
+</li>
+</ul>
+<p>This is not needed if you are using the Windows guest tools installer above.</p>
+</div>
+</div>
+<div class="section" id="server">
+<h2>Server</h2>
+<p>The SPICE server code is needed when building SPICE support into <a class="reference external" href="http://www.qemu.org/">QEMU</a>. It should be available as a package in your favourite Linux distribution, which is the preferred way of getting it.</p>
+<ul class="simple">
+<li>spice-protocol - headers defining protocols, <a class="reference external" href="https://www.spice-space.org/download/releases/spice-protocol-0.12.12.tar.bz2">spice-protocol-0.12.12.tar.bz2</a><ul>
+<li><a class="reference external" href="http://cgit.freedesktop.org/spice/spice-protocol">http://cgit.freedesktop.org/spice/spice-protocol</a></li>
+</ul>
+</li>
+<li>libusbredir - For USB redirection support, <a class="reference external" href="http://www.spice-space.org/download/usbredir/usbredir-0.7.1.tar.bz2">usbredir-0.7.1.tar.bz2</a><ul>
+<li><a class="reference external" href="http://cgit.freedesktop.org/spice/usbredir">http://cgit.freedesktop.org/spice/usbredir</a></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="stable-release">
+<h3>0.12.8 - stable release</h3>
+<ul class="simple">
+<li>SPICE - Server <a class="reference external" href="https://www.spice-space.org/download/releases/spice-0.12.8.tar.bz2">spice-0.12.8.tar.bz2</a><ul>
+<li><a class="reference external" href="http://cgit.freedesktop.org/spice/spice?h=0.12">http://cgit.freedesktop.org/spice/spice?h=0.12</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="development-release">
+<h3>0.13.2 - development release</h3>
+<ul class="simple">
+<li>SPICE - Server <a class="reference external" href="https://www.spice-space.org/download/releases/spice-0.13.2.tar.bz2">spice-0.13.2.tar.bz2</a><ul>
+<li><a class="reference external" href="http://cgit.freedesktop.org/spice/spice">http://cgit.freedesktop.org/spice/spice</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="xspice-server">
+<h3>Xspice server</h3>
+<p><a class="reference external" href="xspice.html">Xspice</a> - an X and Spice server. Requires Xorg. See <a class="reference external" href="http://cgit.freedesktop.org/xorg/driver/xf86-video-qxl/tree/README.xspice">README.xspice</a>.</p>
+<ul class="simple">
+<li>The latest sources are <a class="reference external" href="http://xorg.freedesktop.org/releases/individual/driver/xf86-video-qxl-0.1.4.tar.bz2">xf86-video-qxl</a>. Xspice is mostly reusing that driver and linking directly with spice-server.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="older-releases">
+<h2>Older releases</h2>
+<p>Older source releases can be found <a class="reference external" href="https://www.spice-space.org/download/releases/">here</a>. Old versions of spice-gtk can be found <a class="reference external" href="https://www.spice-space.org/download/gtk/">here</a>.</p>
+</div>
+
+</div>
+        <section id="extras" class="body">
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+            <div>
+                <a href="http://et.redhat.com">
+                    <img src="https://www.spice-space.org/theme/images/icons/et_logo.png" alt="et"/>
+                </a>
+            </div>
+        </footer><!-- /#contentinfo -->
+    </div>
+    <script src="https://www.spice-space.org/theme/js/bootstrap.min.js"></script>
+</body>
+</html>

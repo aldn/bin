@@ -1,0 +1,65 @@
+#!/bin/bash
+
+SOUNDCARD=UA25EX
+PERIOD=1024
+SAMPLERATE=48000
+
+function kill_process()
+{
+    pkill $1
+    sleep 0.4
+    pkill -9 $1
+}
+function title()
+{
+    echo -ne "\033]0;$1\007"
+}
+#============================================================
+#
+#                       jack v1
+#
+#============================================================
+function jack_start()
+{
+    jackd -R -d alsa -d hw:$SOUNDCARD -p $PERIOD -r $SAMPLERATE &
+    sleep 1
+}
+
+function jack_stop()
+{
+    kill_process jackd
+}
+
+#============================================================
+#
+#                       jack2/dbus
+#
+#============================================================
+
+function jack2dbus_start()
+{
+    jack_control start
+    #sudo schedtool -R -p 20 `pidof jackdbus`
+    jack_control eps realtime true
+    jack_control ds alsa
+    jack_control dps device hw:$SOUNDCARD
+    jack_control dps rate $SAMPLERATE
+    jack_control dps nperiods 2
+    jack_control dps period $PERIOD
+}
+function jack2dbus_stop()
+{
+    jack_control stop
+}
+
+title "jack: initializing"
+jack_start
+qjackctl &
+a2jmidid -e &
+#qmidiroute ~/All2MIDI1.qmr &
+title "jack: running"
+read
+jack_stop
+kill_process a2jmidid
+kill_process qjackctl
+title "jack: stopped"

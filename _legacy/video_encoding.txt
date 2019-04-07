@@ -1,0 +1,1 @@
+mencoder -oac copy -ovc lavc -lavcopts vcodec=mpeg4 -vf scale=450:240 -o output.avi input.avi
