@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+pkttyagent --fallback &
+AGENT_PID=$!
+pkexec $*
+kill -SIGINT $AGENT_PID
